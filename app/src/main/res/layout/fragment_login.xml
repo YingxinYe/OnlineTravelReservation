@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".fragments.LoginFragment">
+
+    <ImageView
+            android:id="@+id/login_image_view"
+            android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+    <TextView android:id="@+id/login_text"
+              android:textSize="45dp"
+              android:fontFamily="cursive"
+              android:textColor="@color/white"
+              android:shadowColor="@android:color/black"
+              android:shadowDx="10"
+              android:shadowDy="10"
+              android:shadowRadius="3"
+              android:text="Welcome to RJT Travel"
+              android:textAlignment="center"
+              android:layout_marginTop="100dp"
+              android:textStyle="bold"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_mobile_edit_text_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_text"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ractangle_light_blue_background_box"
+            >
+
+        <EditText
+                android:id="@+id/login_mobile_edit_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:hint="mobile"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_password_edit_text_box"
+            android:layout_below="@+id/login_mobile_edit_text_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ractangle_light_blue_background_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/login_password_edit_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:hint="password"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+            android:textStyle="bold"
+            android:id="@+id/login_go_register"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/login_password_edit_text_box"
+            android:text="Not a member? Sign up"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/login_button"
+            android:textStyle="bold"
+            android:background="@drawable/round_blue_background_box"
+            android:text="Log In"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/login_password_edit_text_box"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:text="Need Help?"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

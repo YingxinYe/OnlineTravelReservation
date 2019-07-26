@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:background="@drawable/view3"
+                tools:context=".fragments.SignUpFragment">
+
+
+    <TextView
+            android:id="@+id/register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Become Our Awesome Member"
+            android:textColor="@color/peppermint"
+            android:textSize="40dp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="2"
+            android:textStyle="bold"/>
+
+    <ScrollView
+            android:layout_below="@+id/register_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include layout="@layout/scrollable_signup"/>
+
+    </ScrollView>
+
+</RelativeLayout>

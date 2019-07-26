@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_edit_first_name_box"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_black_stroke_edit_box"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/register_edit_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="First name"
+                android:paddingHorizontal="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_edit_last_name_box"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:background="@drawable/round_black_stroke_edit_box"
+            android:layout_below="@+id/register_edit_first_name_box"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/register_edit_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Last name"
+                android:paddingHorizontal="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_edit_address_box"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:background="@drawable/round_black_stroke_edit_box"
+            android:layout_below="@+id/register_edit_last_name_box"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/register_edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Address"
+                android:paddingHorizontal="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_edit_password_box"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:background="@drawable/round_black_stroke_edit_box"
+            android:layout_below="@+id/register_edit_address_box"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/register_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Password"
+                android:paddingHorizontal="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_edit_email_box"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:background="@drawable/round_black_stroke_edit_box"
+            android:layout_below="@+id/register_edit_password_box"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/register_edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Email"
+                android:paddingHorizontal="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_edit_mobile_box"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:background="@drawable/round_black_stroke_edit_box"
+            android:layout_below="@+id/register_edit_email_box"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/register_edit_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingHorizontal="10dp"
+                android:hint="Mobile"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_pepperhint_edit_boxx"
+            android:layout_below="@id/register_edit_mobile_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Register"/>
+
+</RelativeLayout>
